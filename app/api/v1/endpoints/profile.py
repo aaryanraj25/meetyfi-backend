@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends, HTTPException, UploadFile, File
-from ....models.user import UserUpdate
-from ....db.mongodb import get_database
-from ..deps import get_current_user
+from app.models.user import UserUpdate
+from app.db.mongodb import get_database
+from app.api.v1.deps import get_current_user
 import aiofiles
 import os
 from datetime import datetime
